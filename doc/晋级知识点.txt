@@ -1,0 +1,45 @@
+1:长按删除  创建弹出菜单动作    onContextItemSelected(ContextMenu)
+2:ActionMode AbsListView.MultiChoiceModeListenr
+3:Fragment的back操作
+4:模拟Home按键  
+Intent intent = new Intent();
+intent.addCateGory(Intent.CATEGORY_HOME);
+startActivity(intent);
+5:利用canvas实现图片的遮罩效果
+6:平板电脑和普通手机资源文件夹命名方式的区别
+res/values-large-land
+res/values-xlarge
+7:IME事件
+8:制作listview的节头部 SimplerExpandableListAdapter
+9:SDK中，所有的空间默认都有3个构造函数
+10:处理复杂的单击事件  应用程序需要实现自定义的单点触摸或者多点触摸来与ui进行交互
+   可以使用框架中的GestureDetector和ScaleGestureDetector,或者干脆通过复写onTouchEvent(), onInterceptTouchEvent方法来手动处理视图的所有触摸事件
+11:转发触摸事件
+   你的应用程序中的一些视图或者触摸目标非常小导致手指很难准确的触摸到它
+   使用TouchDelegate指定一个任意的矩形区域来向小视图转发触摸事件
+12:SurfaceView与TextureView   非UI线程中绘制VIEW   
+13:Hierarchy Viewer是一个带界面的工具，用来调试和优化UI,它提供了视图层次结构的可视化显示并且可以放大显示   
+15:WebView  shouldOverrideUrlLoading
+16:REST API  基于Android网络连接来使用HTTP发送和接收数据时，有两种推荐的方式，第一种是Apache的HttpClient，第二种是java的HttpURLConnection
+17:解析XML, 应用程序需要解析从一个API或者其它资源所返回的xml格式的响应结果
+   可以实现一个org.xml.sax.helpers.DefaultHandler的子类来解析数据，它使用的是基于事件的SAX,Android有三种主要用于解析XML数据的方式，DOM, SAX,pull
+18:读写文件（内部存储，外部存储）   解析CSV数据   备份数据  分享数据（SharedPreference）
+19:创建粘性操作  应用程序即使在其终止时也可以执行一个或者多个后台操作  解决方法：创建一个IntentService来处理
+20:启动其他应用程序
+   你的应用程序需要的功能设备上其他应用程序已经具备了   解决方法：使用隐式的Intent告知系统你想要做的事情， 例如：读取pdf文件
+21:Android 支持库中的NavUtils和TaskStackBuilder可以很容易的在应用程序中构建和生成合适的导航栈  BACK UP
+22:AppWidget 小部件   
+23:创建JAR库 ， 创建Android库
+    task makeJar(type: Copy) {
+        delete 'build/libs/mysdk.jar'
+        from('build/intermediates/bundles/release/')
+        into('build/libs/')
+        include('classes.jar')
+        rename ('classes.jar', 'mysdk.jar')
+    }
+
+    makeJar.dependsOn(build)
+25:Android NDK和 Renderscript
+26:Android 本地Activity
+27:SL4A(scripting layer for android)Android 脚本层，是一个平台，之前称之为Android脚本运行环境，用于在Android设备上安装脚本语言解释器，通过解释器运行脚本，
+SL4A目前支持python ,perl, jruby， lua， beanshell , tcl, shell
