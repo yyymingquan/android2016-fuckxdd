@@ -24,3 +24,23 @@ http://coolshell.cn/articles/9666.html
 
 9:onSaveInstanceState和onRestoreInstanceState
 http://jingyan.baidu.com/article/215817f7d79b891eda14231b.html
+
+@Override
+public void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putBoolean("MyBoolean", true);
+        savedInstanceState.putDouble("myDouble", 1.9);
+        savedInstanceState.putInt("MyInt", 1);
+        savedInstanceState.putString("MyString", "Welcome back to Android");
+        // etc.
+        super.onSaveInstanceState(savedInstanceState);
+}
+
+@Override
+public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        boolean myBoolean = savedInstanceState.getBoolean("MyBoolean");
+        double myDouble = savedInstanceState.getDouble("myDouble");
+        int myInt = savedInstanceState.getInt("MyInt");
+        String myString = savedInstanceState.getString("MyString");
+}
