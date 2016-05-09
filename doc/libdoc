@@ -47,3 +47,6 @@ public void onRestoreInstanceState(Bundle savedInstanceState) {
 
 10:
 http://blog.csdn.net/innost/article/details/50377905
+
+11: 解决dex 函数个数超过65535问题
+http://blog.csdn.net/stevenhu_223/article/details/41277827
