@@ -44,3 +44,6 @@ public void onRestoreInstanceState(Bundle savedInstanceState) {
         int myInt = savedInstanceState.getInt("MyInt");
         String myString = savedInstanceState.getString("MyString");
 }
+
+10:
+http://blog.csdn.net/innost/article/details/50377905
