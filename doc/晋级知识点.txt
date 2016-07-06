@@ -43,3 +43,5 @@ res/values-xlarge
 26:Android 本地Activity
 27:SL4A(scripting layer for android)Android 脚本层，是一个平台，之前称之为Android脚本运行环境，用于在Android设备上安装脚本语言解释器，通过解释器运行脚本，
 SL4A目前支持python ,perl, jruby， lua， beanshell , tcl, shell
+
+28: http://www.2cto.com/kf/201411/354949.html
