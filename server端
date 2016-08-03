@@ -1,6 +1,9 @@
-1:安装npm
+1:安装bower
+ npm install -g bower
+
+2:安装npm
  第一步：npm install
  第二步：npm start
- 第三步：gulp
+ 第三步：gulp(启动如果没有启动还需要安装 npm install gulp)
 
   
