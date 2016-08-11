@@ -6,4 +6,20 @@
  第二步：npm start
  第三步：gulp(启动如果没有启动还需要安装 npm install gulp)
 
-  
+ 3:gradle
+ ➜  ~ cat .bash_profile
+
+export PATH=${PATH}:~/Library/Android/sdk/platform-tools
+export PATH=${PATH}:~/Library/Android/sdk/tools
+
+export GRADLE_HOME=/Users/xiaoming2015/Downloads/gradle-2.14.1
+export PATH=PATH:GRADLE_HOME/bin
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+#export SDKMAN_DIR="/Users/xiaoming2015/.sdkman"
+#[[ -s "/Users/xiaoming2015/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/xiaoming2015/.sdkman/bin/sdkman-init.sh"
+➜  ~ vim .bash_profile
+➜  ~ source .bash_profile
+➜  ~ gradle -version
+
+------------------------------------------------------------
+Gradle 2.14.1
