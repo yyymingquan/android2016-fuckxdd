@@ -23,3 +23,7 @@ export PATH=PATH:GRADLE_HOME/bin
 
 ------------------------------------------------------------
 Gradle 2.14.1
+
+在idea工程中执行：
+➜  lms git:(master) ✗ source /Users/xiaoming2015/.bash_profile 
+➜  lms git:(master) ✗ gradle -version   
